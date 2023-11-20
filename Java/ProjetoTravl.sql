@@ -3,7 +3,7 @@ CREATE TABLE usuario(id_usuario number ,p_nome varchar(50) ,s_nome varchar(100)
 
 select * from usuario;
 
-INSERT INTO usuario (id_usuario, p_nome, s_nome, email, celular, senha) VALUES (1, 'Samantha', 'Silva', 'samantha@test.com.br', 199983212, '12345');
+INSERT INTO usuario (id_usuario, p_nome, s_nome, email, celular, senha) VALUES (1, 'Samantha', 'Silva', 'samantha@test.com.br', 11999331234, '12345');
             
 DROP TABLE usuario;
             
