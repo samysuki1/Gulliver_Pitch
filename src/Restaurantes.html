@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="./images/Logo Gulliver.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Gulliver Traveller</title>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet">
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./service.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <img src="./images/Logo Gulliver.png" alt="Logotipo" class="logo">
+        <a href="./index.html">Gulliver Traveller</a> 
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="./Destinos.html" >Melhores Destinos</a>
+      <a href="./Hoteis.html">Hospedagem</a>
+      <a href="./Restaurantes.html">Gastronomia</a>
+      <a href="./login.html" class="nav-login">Login</a>
+      <a href="./cadastro.html" >Cadastro</a>
+    </div>
+  </div>
+
+  <div class="showcase-restaurante">
+    <div class="showcase-container">
+      <h2 id="titulorestaurante">Bares e Restaurantes que você precisa conhecer!</h2>
+      <p>Os mais fora da rota comum experiências gastronômicas incríveis</p>
+    </div>
+  </div>
+
+  <h4>Olá, Aventureiro! Você está aqui <span id="position"></span></h4>
+  <div id="map"></div>
+
+  <div class="titulo-container">
+    <h4 class="block-head block-head-legacy">
+      <span class="destinos-titulo">
+        MAIS RECENTES
+      </span>
+    </h4>
+  </div>
+
+
+  <!--Conteúdos Restaurantes em São Paulo e Links-->
+
+  <!-- Bar dos arcos -->
+  <div id="block-container-res">
+    <div class="block-content">
+      <div class="block-coluna">
+        <img src="./images/Restaurante_Theatro_Bar_dos_Arcos.jpg"
+          alt="Imagem Restaurante Theatro Municipal Bar dos Arcos">
+        <div class="block-texto">
+          <h3 id="theatrorestaurante">Theatro Municipal - Bar dos Arcos</h3>
+
+          <p>
+            No subsolo do Theatro Municipal de São Paulo, existe um portal com drinques autorais e clássicos da
+            coquetelaria, além de um menu que faz veganos e carnista sorrirem. O bar é bem-assombrado.</p>
+        </div>
+        <a href="https://bardosarcos.com.br/">Mais informações</a>
+      </div>
+
+      <!-- Museu do Ipiranga - Food Park -->
+
+      <div class="block-coluna">
+        <img src="./images/Restaurante_Ipiranga_Museum_Food_Park.jpg"
+          alt="Imagem Restaurante Ipiranga Museum Food Park">
+        <div class="block-texto">
+          <h3 id="restaurantemuseu">Museu do Ipiranga - Food Park</h3>
+
+          <p>Espaço descontraído e familiar petfriendly ao ar livre com bares e lanchonetes móveis foodtrucks com
+            variedades culinárias, música ao vivo e festas temáticas com Cervejas e Drinks.</p>
+        </div>
+        <a href="https://www.instagram.com/museumfoodpark/">Mais informações</a>
+      </div>
+
+      <!-- Caffé  -->
+
+      <div class="block-coluna">
+        <img src="./images/Restaurante_Casa_das_Rosas_Caffé_Ristoro.jpg"
+          alt="Imagem Restaurante Casa das Rosas Caffé Ristoro">
+        <div class="block-texto">
+          <h3 id="restaurantecasadasrosas">Casa das Rosas - Caffé Ristoro</h3>
+
+          <p>
+            Café e restaurante no Jardim da Casa das Rosas, Cardápio com lanches, pratos, tortas e cafés, destaque aos
+            risotos, ótima opção de almoço ao ar livre em espaço de decoração vintage e retrô.</p>
+        </div>
+        <a href="https://www.cafferistoro.com.br/">Mais informações</a>
+      </div>
+
+      <!-- Antiga Fábrica - Cervejaria Holy Water -->
+
+      <div class="block-coluna">
+        <img src="./images/Restaurate_ABC_Fabrica_de_Sal_Holy_Water.jpg"
+          alt="Imagem Restaurate Fabrica de Sal ABC Holy Water">
+        <div class="block-texto">
+          <h3 id="restaurantefabrica">Antiga Fábrica - Cervejaria Holy Water</h3>
+
+          <p>
+            A casa de projeto arquitetônico moderno, ambiente requintado com decoração elegante e muito aconchegante. Há
+            uma linda jabuticabeira no centro do restaurante, é possível ver a produção de cerveja.</p>
+        </div>
+        <a href="https://holywaterbeer.com/">Mais informações</a>
+      </div>
+
+      <!-- Paranapiacaba - Bistrô Flor do Cambuci -->
+
+      <div class="block-coluna">
+        <img src="./images/Restaurante_Paranapiacaba_Bistro_Flor_do_Cambuci.jpg"
+          alt="Imagem Restaurante Paranapiacaba Bistro Flor do Cambuci">
+        <div class="block-texto">
+          <h3 id="restauranteparanapiacaba">Paranapiacaba - Bistrô Flor do Cambuci</h3>
+
+          <p>
+            Ambiente familiar, ar rústico e tranquilo, a feijoada é feita no fogão a lenha, ambiente simples, mas a
+            comida é caseira e deliciosa, cerveja artesanal com cambuci muito boa e também suco de cambuci.</p>
+        </div>
+        <a href="https://bistro-flor-do-cambuci.negocio.site/">Mais informações</a>
+      </div>
+
+      <!-- Parque Ibirapuera - Restaurante Prêt no MAM -->
+
+      <div class="block-coluna">
+        <img src="./images/Restaurante_Ibirapuera_Prêt_Mam.jpg"
+          alt="Imagem Restaurante Paque do Ibirapuera Prêt no MAM">
+        <div class="block-texto">
+          <h3 id="restauranteparqueibirapuera">Ibirapuera - Restaurante Prêt no MAM</h3>
+
+          <p>
+            Cantina em galeria de arte tranquila com ambiente iluminado que oferece um bufê de massas, guisados e
+            salada, com vista para o Jardim de Esculturas, a marquise do parque e a Oca.</p>
+        </div>
+        <a href="https://mam.org.br/restaurante/">Mais informações</a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <ul class="footer-menu">
+        <img src="images/Logo Gulliver.png" alt="logo" class="logo">
+        <li class="footer-menu-item info">
+          Mergulhe nas nossas dicas para levar na mala a conexão de uma verdadeira experiência de viagem.
+          Entregue-se
+          de
+          corpo e alma à liberdade do autêntico!
+        </li>
+      </ul>
+
+      <ul class="footer-menu">
+        <p>Links úteis</p>
+        <li class="footer-menu-item link">
+          Ajuda
+        </li>
+        <li class="footer-menu-item link">
+          Sobre
+        </li>
+      </ul>
+
+      <div class="socials">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/9be75513e7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
