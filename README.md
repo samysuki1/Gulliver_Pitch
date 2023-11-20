@@ -3,8 +3,8 @@
 ## PROJETO
 Apresentação do portal Gulliver Traveller site de viagens.
 
-## Tecnologias
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+## TECNOLOGIAS
+Esse projeto foi desenvolvido com as seguintes tecnologias (Languages):
 - HTML 
 - CSS
 - Java
