@@ -8,7 +8,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias (Languages):
 - HTML 
 - CSS
 - Java
-- JavaSript
+- JavaScript
 
 ## API
 Integramos ao nosso projeto a API do Google Maps, o navegador vai perguntar se permite pegar sua localização “clique em permitir” e vai aparecer no mapa a sua localização na página do Projeto Gulliver [RESTAURANTES](https://github.com/samysuki1/Gulliver_Pitch/blob/main/src/Restaurantes.html), em breve, dicas de restaurantes nas proximidades.
